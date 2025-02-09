@@ -1,0 +1,45 @@
+Compiling 49 files with Solc 0.8.19
+Solc 0.8.19 finished in 6.24s
+Compiler run successful!
+Analysing contracts...
+Running tests...
+
+Ran 2 tests for test/staging/RaffleStagingTest.t.sol:RaffleTest
+[PASS] testFulfillRandomWordsCanOnlyBeCalledAfterPerformUpkeep() (gas: 70873)
+[PASS] testFulfillRandomWordsPicksAWinnerResetsAndSendsMoney() (gas: 70872)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 13.32ms (933.15µs CPU time)
+
+Ran 14 tests for test/uint/RaffleTest.t.sol:RaffleTest
+[PASS] testCheckUpkeepReturnsFalseIfEnoughTimeHasntPassed() (gas: 73408)
+[PASS] testCheckUpkeepReturnsFalseIfItHasNoBalance() (gas: 21129)
+[PASS] testCheckUpkeepReturnsFalseIfRaffleIsntOpen() (gas: 227451)
+[PASS] testCheckUpkeepReturnsTrueWhenParametersGood() (gas: 77085)
+[PASS] testDontAllowPlayersToEnterWhileRaffleIsCalculating() (gas: 230847)
+[PASS] testEmitsEventOnEntrance() (gas: 69585)
+[PASS] testFulfillRandomWordsCanOnlyBeCalledAfterPerformUpkeep() (gas: 89146)
+[PASS] testFulfillRandomWordsPicksAWinnerResetsAndSendsMoney() (gas: 348497)
+[PASS] testPerformUpkeepCanOnlyRunIfCheckUpkeepIsTrue() (gas: 221957)
+[PASS] testPerformUpkeepRevertsIfCheckUpkeepIsFalse() (gas: 18824)
+[PASS] testPerformUpkeepUpdatesRaffleStateAndEmitsRequestId() (gas: 230967)
+[PASS] testRaffleInitializesInOpenState() (gas: 8014)
+[PASS] testRaffleRecordsPlayerWhenTheyEnter() (gas: 69373)
+[PASS] testRaffleRevertsWHenYouDontPayEnought() (gas: 11137)
+Suite result: ok. 14 passed; 0 failed; 0 skipped; finished in 13.73ms (7.13ms CPU time)
+
+Ran 2 test suites in 14.77ms (27.05ms CPU time): 16 tests passed, 0 failed, 0 skipped (16 total tests)
+
+╭---------------------------+-----------------+-----------------+---------------+----------------╮
+| File                      | % Lines         | % Statements    | % Branches    | % Funcs        |
++================================================================================================+
+| script/DeployRaffle.s.sol | 66.67% (10/15)  | 65.00% (13/20)  | 0.00% (0/1)   | 100.00% (1/1)  |
+|---------------------------+-----------------+-----------------+---------------+----------------|
+| script/HelperConfig.s.sol | 80.65% (25/31)  | 89.29% (25/28)  | 40.00% (2/5)  | 57.14% (4/7)   |
+|---------------------------+-----------------+-----------------+---------------+----------------|
+| script/Interactions.s.sol | 11.48% (7/61)   | 9.84% (6/61)    | 0.00% (0/3)   | 11.11% (1/9)   |
+|---------------------------+-----------------+-----------------+---------------+----------------|
+| src/Raffle.sol            | 81.03% (47/58)  | 88.24% (45/51)  | 75.00% (3/4)  | 64.29% (9/14)  |
+|---------------------------+-----------------+-----------------+---------------+----------------|
+| test/mocks/LinkToken.sol  | 23.53% (4/17)   | 15.38% (2/13)   | 0.00% (0/1)   | 40.00% (2/5)   |
+|---------------------------+-----------------+-----------------+---------------+----------------|
+| Total                     | 51.10% (93/182) | 52.60% (91/173) | 35.71% (5/14) | 47.22% (17/36) |
+╰---------------------------+-----------------+-----------------+---------------+----------------╯
